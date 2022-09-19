@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  sbproducer:
+    build:
+      context: ./sb-kafka-producer
+      dockerfile: Dockerfile
+    environment:
+      - BROKER=kafka1:19091
+  sbconsumer:
+    build:
+      context: ./sb-kafka-consumer
+      dockerfile: Dockerfile
+    environment:
+      - BROKER=kafka2:19092
+      - MESSAGE_PROCESSING_TIME=0

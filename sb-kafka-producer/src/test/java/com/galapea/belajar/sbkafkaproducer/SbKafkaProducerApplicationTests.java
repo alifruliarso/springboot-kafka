@@ -1,13 +1,11 @@
 package com.galapea.belajar.sbkafkaproducer;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.*;
+import org.springframework.boot.test.context.*;
 
 @SpringBootTest
 class SbKafkaProducerApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
+  @Test
+  void contextLoads() {}
 }
